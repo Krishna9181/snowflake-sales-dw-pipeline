@@ -128,10 +128,6 @@ Analytics tables auto-refresh
 Streamlit dashboard shows latest data
 ```
 
-## Prerequisites
-
-- Snowflake account (Enterprise edition recommended for full Time Travel)
-- ACCOUNTADMIN role (for initial setup)
 
 ## Cost Optimization
 
@@ -139,3 +135,8 @@ Streamlit dashboard shows latest data
 - Resource monitor limits daily spend to 10 credits
 - Tasks only run when streams have data (no idle compute)
 - Dynamic Tables only refresh when upstream data changes
+
+## Considerations
+
+- Haven't used Snowpipe (or) Bulkload from external ADLS/S3/GCS. Just insterted data into raw tables directly.
+- As an extension, external stage can be configured and data can be pulled from external storages. 
